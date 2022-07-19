@@ -1254,7 +1254,7 @@ MonoBehaviour:
   rmColor: {r: 0.9056604, g: 0.123033054, b: 0.24565482, a: 1}
   rmColorVal: 0
   rmOPFragment: 1
-  rmOPFragmentPar_Size: {x: 3, y: 3, z: 3}
+  rmOPFragmentPar_Size: {x: 1.19, y: 1.56, z: 2.66}
   rmOPFragmentPar_Evolution: 1.08
   rmOPFragmentPar_EnableAnim: 0
   rmOPFragmentPar_AnimDirection: {x: 0, y: 0, z: 0}
@@ -2469,7 +2469,7 @@ MonoBehaviour:
   - {fileID: 642833698}
   nextIdx: 0
   damping: 10
-  moveSpeed: 40
+  moveSpeed: 10
   dist: 20
 --- !u!4 &1911250116
 Transform:
