@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 //using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.Windows.WebCam;
 using Random = UnityEngine.Random;
 
@@ -34,6 +35,11 @@ public class positionMover : MonoBehaviour
     public float moveSpeed = 40.0f;
     public float dist = 2.0f;   // WayPoint와의 거리
 
+    public Text ptext;
+    public Text atext;
+    public float _positive;
+    public float _active;
+
     float delaytime = 0f;
     int randomNum;
 
@@ -44,9 +50,13 @@ public class positionMover : MonoBehaviour
         if (delaytime > randomNum)
         {
             nextIdx = Random.Range(0, points.Length);
-            Debug.Log($"{randomNum}초");
+            //Debug.Log($"{randomNum}초");
             delaytime = 0f;
         }
+        ptext.text = _positive.ToString();
+        atext.text = _active.ToString();
+
+        Debug.Log($"p: {ptext.text} n:{atext.text}");
     }
     // 스크립트가 활성화될 때마다 호출되는 함수
     private void OnEnable()
@@ -66,7 +76,7 @@ public class positionMover : MonoBehaviour
             yield return new WaitForSeconds(0.001f);
             float distance = Vector3.Distance(transform.position, points[nextIdx].position);
 
-            Debug.Log($" WayPoint와의 거리 : {distance}");
+            //Debug.Log($" WayPoint와의 거리 : {distance}");
 
             // Moi와 WayPoint가 WayPoint에 가깝게 들어와 있으면서 스페이스바를 눌렀을 때 
             if (Input.GetKey(KeyCode.Space) && distance <= dist)
