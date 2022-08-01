@@ -105,7 +105,7 @@ float4 MAS_ShapeGenerator(float3 center)
    float4 obj8 = GENERATOR_SHAPE(center,color8,size8 * enabled8,_obj8Model);
    obj8 = OP_Fragment(obj8,fragSize8,DirfragSize8,center,fragEnabled8);
 
-   float4 obj9 = GENERATOR_SHAPE(center,color9,size9 * enabled9,_obj9Model);
+   float4 obj9 = GEN_FRAC_Apollonian(center,size9.xyz,_obj9Model,color9);
    obj9 = OP_Fragment(obj9,fragSize9,DirfragSize9,center,fragEnabled9);
 
 //-----Registered Advanced Operators
@@ -114,22 +114,23 @@ float4 MAS_ShapeGenerator(float3 center)
    float4 group1 = OP_SmoothSubtraction(obj5,obj0,obj5sm);
    float4 group2 = OP_SmoothSubtraction(obj7,obj0,obj7sm);
    float4 group3 = OP_SmoothSubtraction(obj8,obj0,obj8sm);
+   float4 group4 = OP_SmoothSubtraction(obj9,obj0,obj9sm);
 
 //-----Connected Advanced Operators - Straight Unions
 //Connection Group of obj0
-   float4 group4 = OP_StraightUnion(group0,group1,_MASrenderColorSmoothness);
-   float4 group5 = OP_StraightUnion(group4,group2,_MASrenderColorSmoothness);
-   float4 group6 = OP_StraightUnion(group5,group3,_MASrenderColorSmoothness);
+   float4 group5 = OP_StraightUnion(group0,group1,_MASrenderColorSmoothness);
+   float4 group6 = OP_StraightUnion(group5,group2,_MASrenderColorSmoothness);
+   float4 group7 = OP_StraightUnion(group6,group3,_MASrenderColorSmoothness);
+   float4 group8 = OP_StraightUnion(group7,group4,_MASrenderColorSmoothness);
 
 //-----Connected Advanced Operators - Smooth Unions
 
 
 //-----Registered Final Groups & Single Objects
-   float4 group7 = OP_SmoothUnion(group6,obj1,_MASrenderSmoothness);
-   float4 group8 = OP_SmoothUnion(group7,obj3,_MASrenderSmoothness);
-   float4 group9 = OP_SmoothUnion(group8,obj4,_MASrenderSmoothness);
-   float4 group10 = OP_SmoothUnion(group9,obj6,_MASrenderSmoothness);
-   float4 group11 = OP_SmoothUnion(group10,obj9,_MASrenderSmoothness);
-   result = group11;
+   float4 group9 = OP_SmoothUnion(group8,obj1,_MASrenderSmoothness);
+   float4 group10 = OP_SmoothUnion(group9,obj3,_MASrenderSmoothness);
+   float4 group11 = OP_SmoothUnion(group10,obj4,_MASrenderSmoothness);
+   float4 group12 = OP_SmoothUnion(group11,obj6,_MASrenderSmoothness);
+   result = group12;
    return result;
 }

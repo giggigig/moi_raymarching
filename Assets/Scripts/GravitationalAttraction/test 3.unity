@@ -518,8 +518,8 @@ MonoBehaviour:
   rmOPOperator_Target: {fileID: 0}
   rmOPBeingOperated: 0
   rmMyBornName: obj1
-  rmMappingMaster: {fileID: 1616845892}
-  bornID: 32880
+  rmMappingMaster: {fileID: 871960644}
+  bornID: 27330
   eHist_WasFractal: 0
   eHist_FractalType: 0
   eHist_WasOperation: 0
@@ -672,7 +672,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 58.949, y: -38.542, z: -10.454}
 --- !u!1 &247047667
 GameObject:
@@ -858,8 +858,8 @@ MonoBehaviour:
   rmOPOperator_Target: {fileID: 0}
   rmOPBeingOperated: 0
   rmMyBornName: obj3
-  rmMappingMaster: {fileID: 1616845892}
-  bornID: 32906
+  rmMappingMaster: {fileID: 871960644}
+  bornID: 27356
   eHist_WasFractal: 0
   eHist_FractalType: 0
   eHist_WasOperation: 0
@@ -1081,8 +1081,8 @@ MonoBehaviour:
   rmOPOperator_Target: {fileID: 1911250112}
   rmOPBeingOperated: 0
   rmMyBornName: obj6
-  rmMappingMaster: {fileID: 1616845892}
-  bornID: 32926
+  rmMappingMaster: {fileID: 871960644}
+  bornID: 27376
   eHist_WasFractal: 0
   eHist_FractalType: 0
   eHist_WasOperation: 0
@@ -1246,8 +1246,8 @@ MonoBehaviour:
   rmOPOperator_Target: {fileID: 0}
   rmOPBeingOperated: 0
   rmMyBornName: obj4
-  rmMappingMaster: {fileID: 1616845892}
-  bornID: 32942
+  rmMappingMaster: {fileID: 871960644}
+  bornID: 27392
   eHist_WasFractal: 0
   eHist_FractalType: 0
   eHist_WasOperation: 0
@@ -1735,101 +1735,257 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19047f7eaf30dc043b240f4082ace26c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rmIsFractal: 1
+  rmIsFractal: 0
   rmFractalType: 0
   rmShapeSmoothness: 0.2
-  rmParamA: 1.5
-  rmParamB: 1
-  rmParamC: 1
+  rmParamA: 1.01
+  rmParamB: 0.27
+  rmParamC: 0.64
   rmParamD: 0
-  rmColor: {r: 1, g: 0.514151, b: 0.8073212, a: 1}
+  rmColor: {r: 1, g: 0.6292043, b: 0.4669811, a: 1}
   rmColorVal: 0
   rmOPFragment: 1
-  rmOPFragmentPar_Size: {x: 0.001, y: 0.001, z: 0.01}
+  rmOPFragmentPar_Size: {x: 1.19, y: 1.56, z: 2.66}
   rmOPFragmentPar_Evolution: 1.08
   rmOPFragmentPar_EnableAnim: 0
   rmOPFragmentPar_AnimDirection: {x: 0, y: 0, z: 0}
-  rmExternalOperation: 1
-  rmOPOperator_Target: {fileID: 1911250112}
+  rmExternalOperation: 0
+  rmOPOperator_Target: {fileID: 0}
   rmOPBeingOperated: 0
-  rmMyBornName: obj9
-  rmMappingMaster: {fileID: 1616845892}
-  bornID: 32996
-  eHist_WasFractal: 1
+  rmMyBornName: obj0
+  rmMappingMaster: {fileID: 871960644}
+  bornID: 27446
+  eHist_WasFractal: 0
   eHist_FractalType: 0
-  eHist_WasOperation: 1
-  eHist_OPTarget: {fileID: 1911250112}
---- !u!21 &887938664
-Material:
-  serializedVersion: 6
+  eHist_WasOperation: 0
+  eHist_OPTarget: {fileID: 0}
+--- !u!1 &871960643
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Matej Vanco/RayMarcher/PC/RM Master_test
-  m_Shader: {fileID: 4800000, guid: 29d52ce0c87f3c34a85dcf0259ea618c, type: 3}
-  m_ShaderKeywords: _REFLECTCUBEMAPENABLED_ON _REFLECTENABLED_ON _SHADEENABLED_ON
-    _SHADESOFT_ON
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MASrenderMainFilter:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MASrenderPrimaryTexture:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _REFLECTcubemap:
-        m_Texture: {fileID: 8900000, guid: dc88c1d60d924b440bd72d6132a1292c, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _LIGHTintens: 0.5
-    - _LIGHTjitter: 0.086
-    - _MASfogDensity: 0
-    - _MASrenderColorSmoothness: 0.8
-    - _MASrenderFresnel: 1
-    - _MASrenderFresnelMultiplier: 1
-    - _MASrenderMainEmission: 1
-    - _MASrenderMaxDistance: 50
-    - _MASrenderPrimaryTextureTile: 1
-    - _MASrenderQuality: 0.0001
-    - _MASrenderQualitySetting: 1
-    - _MASrenderSmoothness: 0.2
-    - _MASrenderSpecularA: 0.651
-    - _MASrenderSpecularB: 15.3
-    - _MASrenderSpecularIntens: 0.73
-    - _MASrenderToonDens: 0.125
-    - _MASrenderToonThresh: 0.05
-    - _OPloopEnabled: 0
-    - _OPloopTwoDimens: 0
-    - _REFLECTcubemapEnabled: 1
-    - _REFLECTenabled: 1
-    - _REFLECTintensity: 4.11
-    - _REFLECTphysX: 0
-    - _REFLECTphysXSampleCount: 1
-    - _REFLECTphysXemiss: 0
-    - _REFLECTphysXintens: 1
-    - _SHADEenabled: 1
-    - _SHADEintens: 2.29
-    - _SHADEsoft: 1
-    - _SHADEsoftness: 6.5
-    m_Colors:
-    - _LIGHTdirect: {r: -0.32139367, g: -0.8567045, b: 0.40343964, a: 0}
-    - _MASfogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    - _MASrenderMainColor: {r: 1, g: 0.63584906, b: 0.71756333, a: 1}
-    - _MASrenderSecondColor: {r: 1, g: 0.5, b: 0, a: 1}
-    - _OPloopTilling: {r: 10, g: 10, b: 10, a: 0}
-    - _SHADEdistance: {r: 0.01, g: 15, b: 0, a: 0}
-  m_BuildTextureStacks: []
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 871960649}
+  - component: {fileID: 871960648}
+  - component: {fileID: 871960647}
+  - component: {fileID: 871960645}
+  - component: {fileID: 871960646}
+  - component: {fileID: 871960644}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &871960644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871960643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe1c2eac9fe4944459d9faa97a77ad39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapRmMaster: {fileID: 871960645}
+  mapMaximumObjects: 6
+  mapCurrentMaximumObjects: 6
+  mapCurrentObjectsCount: 6
+  mapSetForTheCurrentScene: 0
+  mapCurrentSceneName: Example_Operations
+  mapObjectsContainer:
+  - mapVirtualObject: {fileID: 832846069}
+  - mapVirtualObject: {fileID: 1911250112}
+  - mapVirtualObject: {fileID: 0}
+  - mapVirtualObject: {fileID: 0}
+  - mapVirtualObject: {fileID: 0}
+  - mapVirtualObject: {fileID: 0}
+--- !u!114 &871960645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871960643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 038760705395e2548b161aefc6718a99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rmDirectionalLightSource: {fileID: 0}
+  rmMaterialSource: {fileID: 0}
+  rmVRMode: 0
+  rmMobileMode: 0
+  rmWebGL: 0
+  SHADER_MASrenderMainColor: {r: 1, g: 0.8016606, b: 0, a: 1}
+  SHADER_MASrenderSecondColor: {r: 0, g: 1, b: 0.43849897, a: 1}
+  SHADER_MASrenderMainEmission: 1
+  SHADER_MASrenderSpecularA: 0.062
+  SHADER_MASrenderSpecularB: 7
+  SHADER_MASrenderSpecularIntens: 0.1
+  SHADER_MASrenderPrimaryTexture: {fileID: 0}
+  SHADER_MASrenderPrimaryTextureTile: 1
+  SHADER_MASfog: 0
+  SHADER_MASfogDensity: 0.05
+  SHADER_MASfogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  SHADER_MASrenderMaxDistance: 100
+  SHADER_MASrenderQualitySetting: 1
+  SHADER_MASrenderQuality: 0.001
+  SHADER_MASrenderQuality_E: 3
+  inSHADER_Render_Lambert: 1
+  inSHADER_Render_Flat: 1
+  inSHADER_Render_Toon: 0
+  inSHADER_Render_Outline: 0
+  SHADER_MASrenderToonThresh: 0.063
+  SHADER_MASrenderToonDens: 0.66
+  SHADER_MASrenderFresnel: 0.35
+  SHADER_MASrenderFresnelMultiplier: 0.15
+  SHADER_MASrenderSmoothness: 0.2
+  SHADER_MASrenderColorSmoothness: 9
+  SHADER_LIGHTintens: 0.5
+  SHADER_LIGHTjitter: 0.001
+  SHADER_SHADEenabled: 1
+  SHADER_SHADEdistance: {x: 0.01, y: 15}
+  SHADER_SHADEintens: 1
+  SHADER_SHADEsoft: 1
+  SHADER_SHADEsoftness: 7
+  SHADER_REFLECTenabled: 1
+  SHADER_REFLECTintensity: 0.6
+  SHADER_REFLECTcubemapEnabled: 1
+  SHADER_REFLECTcubemap: {fileID: 0}
+  SHADER_REFLECTphysX: 0
+  SHADER_REFLECTphysXemiss: 0
+  SHADER_REFLECTphysXintens: 1
+  SHADER_REFLECTphysXSampleCount: 1
+  SHADER_OPloopEnabled: 0
+  SHADER_OPloopTilling: {x: 10, y: 10, z: 10}
+  SHADER_MAScolorRamp: {fileID: 0}
+  SHADER_MASrenderSpecularIntensMob: 0.5
+  SHADER_MASrenderSpecularSize: 1
+  SHADER_MASrenderOutlineSoft: 2
+  SHADER_MASrenderOutlineDens: 3
+  SHADER_MASrenderShadowUmbraIntens: 0.1
+  SHADER_OPfragmentSize: {x: 0, y: 0, z: 0}
+  SHADER_OPfragmentDirect: {x: 1, y: 1, z: 1}
+--- !u!114 &871960646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871960643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 617c0fc40c9af1f47a4a4fdd8d4f33b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  xxLoadedObjectBuffer: "//-----Registered Object Parameters\nfloat4x4 _obj0Model;\nfloat4x4
+    _obj1Model;\nfloat4x4 _obj2Model;\nfloat4x4 _obj3Model;\nfloat4x4 _obj4Model;\nfloat4x4
+    _obj5Model;\n\nfloat obj0sm,enabled0;\nfloat4 size0;\nfloat obj1sm,enabled1;\nfloat4
+    size1;\nfloat obj2sm,enabled2;\nfloat4 size2;\nfloat obj3sm,enabled3;\nfloat4
+    size3;\nfloat obj4sm,enabled4;\nfloat4 size4;\nfloat obj5sm,enabled5;\nfloat4
+    size5;\n\nfloat3 color0;\nfloat3 color1;\nfloat3 color2;\nfloat3 color3;\nfloat3
+    color4;\nfloat3 color5;\n\nfloat4 fragSize0;\nfloat3 DirfragSize0;\nfloat fragEnabled0;\nfloat4
+    fragSize1;\nfloat3 DirfragSize1;\nfloat fragEnabled1;\nfloat4 fragSize2;\nfloat3
+    DirfragSize2;\nfloat fragEnabled2;\nfloat4 fragSize3;\nfloat3 DirfragSize3;\nfloat
+    fragEnabled3;\nfloat4 fragSize4;\nfloat3 DirfragSize4;\nfloat fragEnabled4;\nfloat4
+    fragSize5;\nfloat3 DirfragSize5;\nfloat fragEnabled5;\n\n//-----Registered Shape
+    Branches\nfloat4 MAS_ShapeGenerator(float3 center)\n{\n   float4 result;\n\n  
+    float4 obj0 = GEN_FRAC_Apollonian(center,size0.xyz,_obj0Model,color0);\n   obj0
+    = OP_Fragment(obj0,fragSize0,DirfragSize0,center,fragEnabled0);\n\n   float4
+    obj1 = GENERATOR_SHAPE(center,color1,size1 * enabled1,_obj1Model);\n   obj1 =
+    OP_Fragment(obj1,fragSize1,DirfragSize1,center,fragEnabled1);\n\n   float4 obj2
+    = GENERATOR_SHAPE(center,color2,size2 * enabled2,_obj2Model);\n   obj2 = OP_Fragment(obj2,fragSize2,DirfragSize2,center,fragEnabled2);\n\n  
+    float4 obj3 = GENERATOR_SHAPE(center,color3,size3 * enabled3,_obj3Model);\n  
+    obj3 = OP_Fragment(obj3,fragSize3,DirfragSize3,center,fragEnabled3);\n\n   float4
+    obj4 = GENERATOR_SHAPE(center,color4,size4 * enabled4,_obj4Model);\n   obj4 =
+    OP_Fragment(obj4,fragSize4,DirfragSize4,center,fragEnabled4);\n\n   float4 obj5
+    = GENERATOR_SHAPE(center,color5,size5 * enabled5,_obj5Model);\n   obj5 = OP_Fragment(obj5,fragSize5,DirfragSize5,center,fragEnabled5);\n\n//-----Registered
+    Advanced Operators\n//Groups of obj3\n   float4 group0 = OP_SmoothSubtraction(obj0,obj3,obj0sm);\n\n//Groups
+    of obj2\n   float4 group1 = OP_SmoothSubtraction(obj3,obj2,obj3sm);\n   float4
+    group2 = OP_SmoothSubtraction(obj5,obj2,obj5sm);\n\n//Groups of obj1\n   float4
+    group3 = OP_SmoothIntersection(obj4,obj1,obj4sm);\n\n//-----Connected Advanced
+    Operators - Straight Unions\n//Connection Group of obj2\n   float4 group4 = OP_StraightUnion(group1,group2,_MASrenderColorSmoothness);\n\n//-----Connected
+    Advanced Operators - Smooth Unions\n//Connection of single group0\n   float4
+    group5 = OP_SmoothUnion(group4,group0,_MASrenderSmoothness);\n//Connection of
+    single group3\n   float4 group6 = OP_SmoothUnion(group5,group3,_MASrenderSmoothness);\n\n\n//-----Registered
+    Final Groups & Single Objects\n   result = group6;\n   return result;\n}"
+  xxLoadedShapesSource: 
+  xxShowObjectBuffer: 0
+  xxShowShapesSource: 0
+  xxRMmaster: {fileID: 871960645}
+  xxMappingMaster: {fileID: 871960644}
+  xxInternalTextEditorHeight: 350
+--- !u!81 &871960647
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871960643}
+  m_Enabled: 1
+--- !u!20 &871960648
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871960643}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &871960649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871960643}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1015394089
 GameObject:
   m_ObjectHideFlags: 0
@@ -2181,8 +2337,8 @@ MonoBehaviour:
   rmOPOperator_Target: {fileID: 1911250112}
   rmOPBeingOperated: 0
   rmMyBornName: obj8
-  rmMappingMaster: {fileID: 1616845892}
-  bornID: 33034
+  rmMappingMaster: {fileID: 871960644}
+  bornID: 27496
   eHist_WasFractal: 0
   eHist_FractalType: 0
   eHist_WasOperation: 1
@@ -2248,8 +2404,8 @@ MonoBehaviour:
   rmOPOperator_Target: {fileID: 1911250112}
   rmOPBeingOperated: 0
   rmMyBornName: obj7
-  rmMappingMaster: {fileID: 1616845892}
-  bornID: 33040
+  rmMappingMaster: {fileID: 871960644}
+  bornID: 27502
   eHist_WasFractal: 0
   eHist_FractalType: 0
   eHist_WasOperation: 1
@@ -2315,8 +2471,8 @@ MonoBehaviour:
   rmOPOperator_Target: {fileID: 1911250112}
   rmOPBeingOperated: 0
   rmMyBornName: obj5
-  rmMappingMaster: {fileID: 1616845892}
-  bornID: 33046
+  rmMappingMaster: {fileID: 871960644}
+  bornID: 27508
   eHist_WasFractal: 0
   eHist_FractalType: 0
   eHist_WasOperation: 1
@@ -2431,317 +2587,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1616845887
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1616845890}
-  - component: {fileID: 1616845889}
-  - component: {fileID: 1616845888}
-  - component: {fileID: 1616845894}
-  - component: {fileID: 1616845893}
-  - component: {fileID: 1616845892}
-  - component: {fileID: 1616845895}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &1616845888
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616845887}
-  m_Enabled: 1
---- !u!20 &1616845889
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616845887}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1616845890
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616845887}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -16.02}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1616845892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616845887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe1c2eac9fe4944459d9faa97a77ad39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mapRmMaster: {fileID: 1616845894}
-  mapMaximumObjects: 10
-  mapCurrentMaximumObjects: 10
-  mapCurrentObjectsCount: 10
-  mapSetForTheCurrentScene: 0
-  mapCurrentSceneName: test
-  mapObjectsContainer:
-  - mapVirtualObject: {fileID: 1911250112}
-  - mapVirtualObject: {fileID: 134265078}
-  - mapVirtualObject: {fileID: 2099463123}
-  - mapVirtualObject: {fileID: 275457428}
-  - mapVirtualObject: {fileID: 472635367}
-  - mapVirtualObject: {fileID: 1509233471}
-  - mapVirtualObject: {fileID: 296133808}
-  - mapVirtualObject: {fileID: 1484909815}
-  - mapVirtualObject: {fileID: 1484656394}
-  - mapVirtualObject: {fileID: 832846069}
---- !u!114 &1616845893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616845887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 617c0fc40c9af1f47a4a4fdd8d4f33b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xxLoadedObjectBuffer: "//-----Registered Object Parameters\nfloat4x4 _obj0Model;\nfloat4x4
-    _obj1Model;\nfloat4x4 _obj2Model;\nfloat4x4 _obj3Model;\nfloat4x4 _obj4Model;\nfloat4x4
-    _obj5Model;\nfloat4x4 _obj6Model;\nfloat4x4 _obj7Model;\nfloat4x4 _obj8Model;\nfloat4x4
-    _obj9Model;\n\nfloat obj0sm,enabled0;\nfloat4 size0;\nfloat obj1sm,enabled1;\nfloat4
-    size1;\nfloat obj2sm,enabled2;\nfloat4 size2;\nfloat obj3sm,enabled3;\nfloat4
-    size3;\nfloat obj4sm,enabled4;\nfloat4 size4;\nfloat obj5sm,enabled5;\nfloat4
-    size5;\nfloat obj6sm,enabled6;\nfloat4 size6;\nfloat obj7sm,enabled7;\nfloat4
-    size7;\nfloat obj8sm,enabled8;\nfloat4 size8;\nfloat obj9sm,enabled9;\nfloat4
-    size9;\n\nfloat3 color0;\nfloat3 color1;\nfloat3 color2;\nfloat3 color3;\nfloat3
-    color4;\nfloat3 color5;\nfloat3 color6;\nfloat3 color7;\nfloat3 color8;\nfloat3
-    color9;\n\nfloat4 fragSize0;\nfloat3 DirfragSize0;\nfloat fragEnabled0;\nfloat4
-    fragSize1;\nfloat3 DirfragSize1;\nfloat fragEnabled1;\nfloat4 fragSize2;\nfloat3
-    DirfragSize2;\nfloat fragEnabled2;\nfloat4 fragSize3;\nfloat3 DirfragSize3;\nfloat
-    fragEnabled3;\nfloat4 fragSize4;\nfloat3 DirfragSize4;\nfloat fragEnabled4;\nfloat4
-    fragSize5;\nfloat3 DirfragSize5;\nfloat fragEnabled5;\nfloat4 fragSize6;\nfloat3
-    DirfragSize6;\nfloat fragEnabled6;\nfloat4 fragSize7;\nfloat3 DirfragSize7;\nfloat
-    fragEnabled7;\nfloat4 fragSize8;\nfloat3 DirfragSize8;\nfloat fragEnabled8;\nfloat4
-    fragSize9;\nfloat3 DirfragSize9;\nfloat fragEnabled9;\n\n//-----Registered Shape
-    Branches\nfloat4 MAS_ShapeGenerator(float3 center)\n{\n   float4 result;\n\n  
-    float4 obj0 = GENERATOR_SHAPE(center,color0,size0 * enabled0,_obj0Model);\n  
-    obj0 = OP_Fragment(obj0,fragSize0,DirfragSize0,center,fragEnabled0);\n\n   float4
-    obj1 = GENERATOR_SHAPE(center,color1,size1 * enabled1,_obj1Model);\n   obj1 =
-    OP_Fragment(obj1,fragSize1,DirfragSize1,center,fragEnabled1);\n\n   float4 obj2
-    = GENERATOR_SHAPE(center,color2,size2 * enabled2,_obj2Model);\n   obj2 = OP_Fragment(obj2,fragSize2,DirfragSize2,center,fragEnabled2);\n\n  
-    float4 obj3 = GENERATOR_SHAPE(center,color3,size3 * enabled3,_obj3Model);\n  
-    obj3 = OP_Fragment(obj3,fragSize3,DirfragSize3,center,fragEnabled3);\n\n   float4
-    obj4 = GENERATOR_SHAPE(center,color4,size4 * enabled4,_obj4Model);\n   obj4 =
-    OP_Fragment(obj4,fragSize4,DirfragSize4,center,fragEnabled4);\n\n   float4 obj5
-    = GENERATOR_SHAPE(center,color5,size5 * enabled5,_obj5Model);\n   obj5 = OP_Fragment(obj5,fragSize5,DirfragSize5,center,fragEnabled5);\n\n  
-    float4 obj6 = GENERATOR_SHAPE(center,color6,size6 * enabled6,_obj6Model);\n  
-    obj6 = OP_Fragment(obj6,fragSize6,DirfragSize6,center,fragEnabled6);\n\n   float4
-    obj7 = GENERATOR_SHAPE(center,color7,size7 * enabled7,_obj7Model);\n   obj7 =
-    OP_Fragment(obj7,fragSize7,DirfragSize7,center,fragEnabled7);\n\n   float4 obj8
-    = GENERATOR_SHAPE(center,color8,size8 * enabled8,_obj8Model);\n   obj8 = OP_Fragment(obj8,fragSize8,DirfragSize8,center,fragEnabled8);\n\n  
-    float4 obj9 = GEN_FRAC_Apollonian(center,size9.xyz,_obj9Model,color9);\n   obj9
-    = OP_Fragment(obj9,fragSize9,DirfragSize9,center,fragEnabled9);\n\n//-----Registered
-    Advanced Operators\n//Groups of obj0\n   float4 group0 = OP_SmoothSubtraction(obj2,obj0,obj2sm);\n  
-    float4 group1 = OP_SmoothSubtraction(obj5,obj0,obj5sm);\n   float4 group2 = OP_SmoothSubtraction(obj7,obj0,obj7sm);\n  
-    float4 group3 = OP_SmoothSubtraction(obj8,obj0,obj8sm);\n   float4 group4 = OP_SmoothSubtraction(obj9,obj0,obj9sm);\n\n//-----Connected
-    Advanced Operators - Straight Unions\n//Connection Group of obj0\n   float4 group5
-    = OP_StraightUnion(group0,group1,_MASrenderColorSmoothness);\n   float4 group6
-    = OP_StraightUnion(group5,group2,_MASrenderColorSmoothness);\n   float4 group7
-    = OP_StraightUnion(group6,group3,_MASrenderColorSmoothness);\n   float4 group8
-    = OP_StraightUnion(group7,group4,_MASrenderColorSmoothness);\n\n//-----Connected
-    Advanced Operators - Smooth Unions\n\n\n//-----Registered Final Groups & Single
-    Objects\n   float4 group9 = OP_SmoothUnion(group8,obj1,_MASrenderSmoothness);\n  
-    float4 group10 = OP_SmoothUnion(group9,obj3,_MASrenderSmoothness);\n   float4
-    group11 = OP_SmoothUnion(group10,obj4,_MASrenderSmoothness);\n   float4 group12
-    = OP_SmoothUnion(group11,obj6,_MASrenderSmoothness);\n   result = group12;\n  
-    return result;\n}"
-  xxLoadedShapesSource: 
-  xxShowObjectBuffer: 0
-  xxShowShapesSource: 0
-  xxRMmaster: {fileID: 1616845894}
-  xxMappingMaster: {fileID: 1616845892}
-  xxInternalTextEditorHeight: 350
---- !u!114 &1616845894
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616845887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 038760705395e2548b161aefc6718a99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rmDirectionalLightSource: {fileID: 216659504}
-  rmMaterialSource: {fileID: 887938664}
-  rmVRMode: 0
-  rmMobileMode: 0
-  rmWebGL: 0
-  SHADER_MASrenderMainColor: {r: 1, g: 0.63584906, b: 0.71756333, a: 1}
-  SHADER_MASrenderSecondColor: {r: 1, g: 0.5, b: 0, a: 1}
-  SHADER_MASrenderMainEmission: 1
-  SHADER_MASrenderSpecularA: 0.651
-  SHADER_MASrenderSpecularB: 15.3
-  SHADER_MASrenderSpecularIntens: 0.73
-  SHADER_MASrenderPrimaryTexture: {fileID: 0}
-  SHADER_MASrenderPrimaryTextureTile: 1
-  SHADER_MASfog: 0
-  SHADER_MASfogDensity: 0.25
-  SHADER_MASfogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-  SHADER_MASrenderMaxDistance: 50
-  SHADER_MASrenderQualitySetting: 1
-  SHADER_MASrenderQuality: 0.0001
-  SHADER_MASrenderQuality_E: 5
-  inSHADER_Render_Lambert: 1
-  inSHADER_Render_Flat: 0
-  inSHADER_Render_Toon: 0
-  inSHADER_Render_Outline: 0
-  SHADER_MASrenderToonThresh: 0.05
-  SHADER_MASrenderToonDens: 0.125
-  SHADER_MASrenderFresnel: 1
-  SHADER_MASrenderFresnelMultiplier: 1
-  SHADER_MASrenderSmoothness: 0.2
-  SHADER_MASrenderColorSmoothness: 0.8
-  SHADER_LIGHTintens: 0.5
-  SHADER_LIGHTjitter: 0.086
-  SHADER_SHADEenabled: 1
-  SHADER_SHADEdistance: {x: 0.01, y: 15}
-  SHADER_SHADEintens: 2.29
-  SHADER_SHADEsoft: 1
-  SHADER_SHADEsoftness: 6.5
-  SHADER_REFLECTenabled: 1
-  SHADER_REFLECTintensity: 4.11
-  SHADER_REFLECTcubemapEnabled: 1
-  SHADER_REFLECTcubemap: {fileID: 8900000, guid: dc88c1d60d924b440bd72d6132a1292c, type: 3}
-  SHADER_REFLECTphysX: 0
-  SHADER_REFLECTphysXemiss: 0
-  SHADER_REFLECTphysXintens: 1
-  SHADER_REFLECTphysXSampleCount: 1
-  SHADER_OPloopEnabled: 0
-  SHADER_OPloopTilling: {x: 10, y: 10, z: 10}
-  SHADER_MAScolorRamp: {fileID: 0}
-  SHADER_MASrenderSpecularIntensMob: 0.5
-  SHADER_MASrenderSpecularSize: 1
-  SHADER_MASrenderOutlineSoft: 2
-  SHADER_MASrenderOutlineDens: 3
-  SHADER_MASrenderShadowUmbraIntens: 0.1
-  SHADER_OPfragmentSize: {x: 0, y: 0, z: 0}
-  SHADER_OPfragmentDirect: {x: 1, y: 1, z: 1}
---- !u!114 &1616845895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616845887}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeTrigger: {fileID: 1616845890}
-  volumeLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  stopNaNPropagation: 1
-  finalBlitToCameraTarget: 0
-  antialiasingMode: 0
-  temporalAntialiasing:
-    jitterSpread: 0.75
-    sharpness: 0.25
-    stationaryBlending: 0.95
-    motionBlending: 0.85
-  subpixelMorphologicalAntialiasing:
-    quality: 2
-  fastApproximateAntialiasing:
-    fastMode: 0
-    keepAlpha: 0
-  fog:
-    enabled: 1
-    excludeSkybox: 1
-  debugLayer:
-    lightMeter:
-      width: 512
-      height: 256
-      showCurves: 1
-    histogram:
-      width: 512
-      height: 256
-      channel: 3
-    waveform:
-      exposure: 0.12
-      height: 256
-    vectorscope:
-      size: 256
-      exposure: 0.12
-    overlaySettings:
-      linearDepth: 0
-      motionColorIntensity: 4
-      motionGridSize: 64
-      colorBlindnessType: 0
-      colorBlindnessStrength: 1
-  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
-  m_ShowToolkit: 1
-  m_ShowCustomSorter: 0
-  breakBeforeColorGrading: 0
-  m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
 --- !u!1 &1658826040
 GameObject:
   m_ObjectHideFlags: 0
@@ -3152,7 +2997,7 @@ MonoBehaviour:
   rmParamB: 0.09
   rmParamC: 0
   rmParamD: 0
-  rmColor: {r: 0.11320752, g: 0.008673288, b: 0, a: 1}
+  rmColor: {r: 1, g: 0.6354912, b: 0.6084906, a: 1}
   rmColorVal: 0
   rmOPFragment: 1
   rmOPFragmentPar_Size: {x: 0.21, y: 1.06, z: 2.32}
@@ -3162,9 +3007,9 @@ MonoBehaviour:
   rmExternalOperation: 0
   rmOPOperator_Target: {fileID: 0}
   rmOPBeingOperated: 1
-  rmMyBornName: obj0
-  rmMappingMaster: {fileID: 1616845892}
-  bornID: 33118
+  rmMyBornName: obj1
+  rmMappingMaster: {fileID: 871960644}
+  bornID: 27564
   eHist_WasFractal: 0
   eHist_FractalType: 0
   eHist_WasOperation: 0
@@ -3309,8 +3154,8 @@ MonoBehaviour:
   rmOPOperator_Target: {fileID: 1911250112}
   rmOPBeingOperated: 0
   rmMyBornName: obj2
-  rmMappingMaster: {fileID: 1616845892}
-  bornID: 33132
+  rmMappingMaster: {fileID: 871960644}
+  bornID: 27578
   eHist_WasFractal: 0
   eHist_FractalType: 0
   eHist_WasOperation: 1

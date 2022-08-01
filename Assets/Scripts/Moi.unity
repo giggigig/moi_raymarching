@@ -217,7 +217,7 @@ MonoBehaviour:
   rmOPBeingOperated: 0
   rmMyBornName: obj6
   rmMappingMaster: {fileID: 1980624125}
-  bornID: 19676
+  bornID: 31488
   eHist_WasFractal: 0
   eHist_FractalType: 0
   eHist_WasOperation: 0
@@ -450,7 +450,7 @@ MonoBehaviour:
   rmOPBeingOperated: 0
   rmMyBornName: obj2
   rmMappingMaster: {fileID: 1980624125}
-  bornID: 19698
+  bornID: 31510
   eHist_WasFractal: 0
   eHist_FractalType: 0
   eHist_WasOperation: 0
@@ -574,7 +574,7 @@ MonoBehaviour:
   rmOPBeingOperated: 0
   rmMyBornName: obj5
   rmMappingMaster: {fileID: 1980624125}
-  bornID: 19712
+  bornID: 31524
   eHist_WasFractal: 0
   eHist_FractalType: 0
   eHist_WasOperation: 1
@@ -630,7 +630,7 @@ MonoBehaviour:
   rmOPBeingOperated: 0
   rmMyBornName: obj0
   rmMappingMaster: {fileID: 1980624125}
-  bornID: 19716
+  bornID: 31528
   eHist_WasFractal: 0
   eHist_FractalType: 0
   eHist_WasOperation: 0
@@ -901,23 +901,23 @@ MonoBehaviour:
   rmIsFractal: 1
   rmFractalType: 0
   rmShapeSmoothness: 0.2
-  rmParamA: 0.86
+  rmParamA: 1.5
   rmParamB: 1
   rmParamC: 1
   rmParamD: 1
   rmColor: {r: 1, g: 0.5227925, b: 0, a: 1}
   rmColorVal: 0
   rmOPFragment: 1
-  rmOPFragmentPar_Size: {x: 1, y: 1, z: 1}
-  rmOPFragmentPar_Evolution: 0.07
+  rmOPFragmentPar_Size: {x: 5, y: 4.09, z: 3.68}
+  rmOPFragmentPar_Evolution: 0.17
   rmOPFragmentPar_EnableAnim: 1
-  rmOPFragmentPar_AnimDirection: {x: 0, y: 0.54, z: 0}
+  rmOPFragmentPar_AnimDirection: {x: 0.22, y: 0.13, z: 0}
   rmExternalOperation: 0
   rmOPOperator_Target: {fileID: 0}
   rmOPBeingOperated: 0
   rmMyBornName: obj7
   rmMappingMaster: {fileID: 1980624125}
-  bornID: -5468
+  bornID: 31558
   eHist_WasFractal: 1
   eHist_FractalType: 0
   eHist_WasOperation: 0
@@ -988,7 +988,7 @@ MonoBehaviour:
   rmOPBeingOperated: 1
   rmMyBornName: obj3
   rmMappingMaster: {fileID: 1980624125}
-  bornID: 19746
+  bornID: 31564
   eHist_WasFractal: 0
   eHist_FractalType: 0
   eHist_WasOperation: 0
@@ -1060,6 +1060,10 @@ MonoBehaviour:
   damping: 10
   moveSpeed: 40
   dist: 2
+  ptext: {fileID: 0}
+  atext: {fileID: 0}
+  _positive: 0
+  _active: 0
 --- !u!4 &894881392
 Transform:
   m_ObjectHideFlags: 0
@@ -1207,7 +1211,7 @@ MonoBehaviour:
   rmOPBeingOperated: 0
   rmMyBornName: obj4
   rmMappingMaster: {fileID: 1980624125}
-  bornID: 19768
+  bornID: 31586
   eHist_WasFractal: 0
   eHist_FractalType: 0
   eHist_WasOperation: 0
@@ -1485,6 +1489,10 @@ MonoBehaviour:
   damping: 10
   moveSpeed: 40
   dist: 2
+  ptext: {fileID: 0}
+  atext: {fileID: 0}
+  _positive: 0
+  _active: 0
 --- !u!4 &1851994205
 Transform:
   m_ObjectHideFlags: 0
@@ -1664,7 +1672,7 @@ MonoBehaviour:
   rmOPBeingOperated: 0
   rmMyBornName: obj1
   rmMappingMaster: {fileID: 1980624125}
-  bornID: 19808
+  bornID: 31626
   eHist_WasFractal: 0
   eHist_FractalType: 0
   eHist_WasOperation: 0
