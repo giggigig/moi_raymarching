@@ -16,8 +16,12 @@ public class positionMover : MonoBehaviour
         IDLE,
         // 스페이스바 눌렀을 때 
         CONVERSATION,
-        // 감정 게이지가 쌓였을 때
-        MOVE
+        // 감정 게이지가 쌓였을 때 , 이동
+        MOVE,
+        // 콩콩뛰기
+        JUMP,
+        //벽에 달라붇기
+        STICK,
     }
 
     // Moi의 현재 상태 
@@ -88,10 +92,16 @@ public class positionMover : MonoBehaviour
             {
                 state = State.MOVE;
             }
+            else if (Input.GetKey(KeyCode.A))
+            {
+                Debug.Log($" a -jump ");
+                state = State.JUMP;
+            }
             else
             {
                 state = State.IDLE;
             }
+
         }
     }
 
@@ -133,6 +143,10 @@ public class positionMover : MonoBehaviour
                     // 이동 (직진)
                     transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed);
                     break;
+                case State.JUMP:
+                    transform.Translate(new Vector3(transform.position.x, transform.position.y+3f*Mathf.Sin(Time.deltaTime), transform.position.y) * Time.deltaTime * moveSpeed);
+                    break;
+
             }
             yield return new WaitForSeconds(0.01f);
         }
