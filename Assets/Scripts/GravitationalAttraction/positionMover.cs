@@ -12,16 +12,17 @@ public class positionMover : MonoBehaviour
     // Moi의 상태 정보
     public enum State
     {
-        // 아무런 인풋이 없을 때
+        // 아무런 인풋이 없을 때 -불편한 존재
         IDLE,
         // 스페이스바 눌렀을 때 
-        CONVERSATION,
+        IN,
         // 감정 게이지가 쌓였을 때 , 이동
         MOVE,
-        // 콩콩뛰기
-        JUMP,
-        //벽에 달라붇기
-        STICK,
+        //RandomAction, //점프, 콩콩뛰기
+        OVERLOAD, //과부하 상태
+
+        /** 모든 상태 시작시 랜덤액션 하고들어감*/
+
     }
 
     // Moi의 현재 상태 
@@ -86,7 +87,7 @@ public class positionMover : MonoBehaviour
             if (Input.GetKey(KeyCode.Space) && distance <= dist)
             {
                 Debug.Log($" 스페이스바 눌림 ");
-                state = State.CONVERSATION;
+                state = State.IN;
             }
             else if (emotionGauge >= 10)
             {
@@ -95,7 +96,6 @@ public class positionMover : MonoBehaviour
             else if (Input.GetKey(KeyCode.A))
             {
                 Debug.Log($" a -jump ");
-                state = State.JUMP;
             }
             else
             {
@@ -115,10 +115,11 @@ public class positionMover : MonoBehaviour
                 case State.IDLE:
                     // Idle 애니메이션 실행
                     transform.LookAt(Camera.main.transform);
+                    //transform.transform.localScale = ;
                     break;
 
                 // CONVERSATIPN 상태
-                case State.CONVERSATION:
+                case State.IN:
                     // 관객의 인풋에 따른 애니메이션 실행
                     transform.LookAt(Camera.main.transform);
                     emotionGauge++;
@@ -143,13 +144,14 @@ public class positionMover : MonoBehaviour
                     // 이동 (직진)
                     transform.Translate(Vector3.forward * Time.deltaTime * moveSpeed);
                     break;
-                case State.JUMP:
-                    transform.Translate(new Vector3(transform.position.x, transform.position.y+3f*Mathf.Sin(Time.deltaTime), transform.position.y) * Time.deltaTime * moveSpeed);
-                    break;
-
             }
             yield return new WaitForSeconds(0.01f);
         }
+    }
+
+    void RandAction()
+    {
+        
     }
 
     private int switchIndex()
